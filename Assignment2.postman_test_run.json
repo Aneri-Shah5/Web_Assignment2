@@ -1,0 +1,181 @@
+{
+	"id": "f00c4bbf-476c-4b44-9529-0f06c0ce002c",
+	"name": "Assignment2",
+	"timestamp": "2024-03-13T02:23:49.851Z",
+	"collection_id": "33025011-8dd1a8ed-a606-4f8d-9f00-a398c97c0994",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 11,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-13T02:23:48.904Z",
+	"totalFail": 3,
+	"results": [
+		{
+			"id": "1347b995-add3-4e7b-8ca7-f3c294020ba2",
+			"name": "User",
+			"url": "localhost/aneriShah_ass2/users.php",
+			"time": 16,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Email is in a valid format": true,
+				"Password is not empty": true,
+				"Verify that the u_purchase_history array is present and contains expected number of elements": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is in a valid format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Password is not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the u_purchase_history array is present and contains expected number of elements": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				16
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Email is in a valid format": true,
+					"Password is not empty": true,
+					"Verify that the u_purchase_history array is present and contains expected number of elements": false
+				}
+			]
+		},
+		{
+			"id": "a31a75fd-8109-4b55-8fb5-77c83bd4c22d",
+			"name": "Product",
+			"url": "localhost/aneriShah_ass2/products.php?REQUEST_METHOD=POST&id=2",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields": true,
+				"p_id is a non-empty string": true,
+				"p_pricing is a number": false,
+				"p_shipping_cost is a number": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"p_id is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"p_pricing is a number": {
+					"pass": 0,
+					"fail": 1
+				},
+				"p_shipping_cost is a number": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"p_id is a non-empty string": true,
+					"p_pricing is a number": false,
+					"p_shipping_cost is a number": false
+				}
+			]
+		},
+		{
+			"id": "74d9b060-f942-4af2-b595-0881fba4a871",
+			"name": "Order_Details",
+			"url": "localhost/aneriShah_ass2/order_details.php",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has required fields - status and message": true,
+				"Status is a non-empty string": true,
+				"Message is a non-empty string": true,
+				"Content-Type is application/json": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has required fields - status and message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has required fields - status and message": true,
+					"Status is a non-empty string": true,
+					"Message is a non-empty string": true,
+					"Content-Type is application/json": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 32,
+	"collection": {
+		"requests": [
+			{
+				"id": "1347b995-add3-4e7b-8ca7-f3c294020ba2",
+				"method": "GET"
+			},
+			{
+				"id": "a31a75fd-8109-4b55-8fb5-77c83bd4c22d",
+				"method": "GET"
+			},
+			{
+				"id": "74d9b060-f942-4af2-b595-0881fba4a871",
+				"method": "GET"
+			}
+		]
+	}
+}
